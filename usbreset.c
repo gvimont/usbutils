@@ -90,7 +90,7 @@ static struct usbentry *parse_devlist(DIR *d)
 	if (attr)
 		strcpy(dev.product_name, attr);
 
-	if (dev.bus_num && dev.dev_num && dev.vendor_id && dev.product_id)
+	if (dev.bus_num && dev.dev_num)
 		return &dev;
 
 	return NULL;
